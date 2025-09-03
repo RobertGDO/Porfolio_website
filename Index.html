@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-bar"></div>
+    
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Your Name</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero active">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your Name</h1>
+                    <p>Full Stack Developer & Computer Science Graduate</p>
+                    <a href="#projects" class="cta-button">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="profile-image">
+                        👤
+                    </div>
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>I'm a passionate Computer Science graduate with experience in full-stack development, artificial intelligence, and software engineering. I love creating innovative solutions and bringing ideas to life through code.</p>
+                        <p>Currently seeking opportunities to contribute to exciting projects and continue growing as a developer. I'm particularly interested in web development, AI applications, and creating user-friendly experiences.</p>
+                        <p>When I'm not coding, you can find me exploring new technologies, working on personal projects, or contributing to open-source communities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <span class="project-icon">🐍</span>
+                        <h3>Python Applications</h3>
+                        <p>Various Python projects including data analysis, automation scripts, and algorithmic solutions. Demonstrates proficiency in Python programming and problem-solving skills.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-icon">🎮</span>
+                        <h3>Tank Game</h3>
+                        <p>Interactive browser-based tank game built with HTML5, CSS3, and JavaScript. Features collision detection, smooth animations, and responsive gameplay.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-icon">📚</span>
+                        <h3>University Dissertation</h3>
+                        <p>Comprehensive research project exploring advanced computer science concepts. Involved extensive research, analysis, and implementation of innovative solutions.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Research</span>
+                            <span class="tech-tag">Analysis</span>
+                            <span class="tech-tag">Documentation</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-icon">👁️</span>
+                        <h3>Motion Detection System</h3>
+                        <p>Real-time motion detection application using computer vision techniques. Capable of detecting and tracking movement with high accuracy and minimal latency.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-icon">🤖</span>
+                        <h3>AI Sentiment Analysis</h3>
+                        <p>Machine learning application that analyzes text sentiment using natural language processing techniques. Provides accurate emotion detection and classification.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">NLP</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-icon">☕</span>
+                        <h3>Java Application</h3>
+                        <p>Object-oriented Java application demonstrating advanced programming concepts including design patterns, data structures, and algorithm implementation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">Design Patterns</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="project-icon">🚗</span>
+                        <h3>E-Commerce Car Dealership</h3>
+                        <p>Full-stack web application for a car dealership with payment integration, user authentication, and comprehensive inventory management. Group project showcasing teamwork and collaboration skills.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">HTML5</span>
+                            <span class="skill-item">CSS3</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">PHP</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">Java</span>
+                            <span class="skill-item">MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">Java</span>
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">PHP</span>
+                            <span class="skill-item">GML</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Specialized Skills</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Machine Learning</span>
+                            <span class="skill-item">Computer Vision</span>
+                            <span class="skill-item">AI Development</span>
+                            <span class="skill-item">Game Development</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">GitHub</span>
+                            <span class="skill-item">VS Code</span>
+                            <span class="skill-item">Database Design</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Problem Solving</span>
+                            <span class="skill-item">Team Collaboration</span>
+                            <span class="skill-item">Project Management</span>
+                            <span class="skill-item">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd like to discuss potential projects or just say hello!</p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            📧 Email
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
+                            💼 LinkedIn
+                        </a>
+                        <a href="https://github.com/yourusername" class="contact-link" target="_blank">
+                            🐙 GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

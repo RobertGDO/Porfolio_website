@@ -112,6 +112,6 @@
         // Initialize typing effect after page load
         window.addEventListener('load', () => {
                 setTimeout(() => {
-                    typeWriter(heroText, 'Full Stack Developer & Computer Science Graduate', 50);
+                    typeWriter(heroText, 'Full Stack Developer & Computer Science Graduate');
                 }, 2000);
         });
